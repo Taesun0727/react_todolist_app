@@ -16,7 +16,7 @@ const TemplateBlock = styled.div`
 `;
 
 function TodoTemplate({ children }){
-  return <TemplateBlock>{children}asd</TemplateBlock>
+  return <TemplateBlock>{children}</TemplateBlock>
 }
 
 export default TodoTemplate;
