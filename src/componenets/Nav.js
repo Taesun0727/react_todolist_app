@@ -23,7 +23,7 @@ function nav() {
         <button className="mywork">내 할일</button>
       </Link>
       <Link to='/Calendar'>
-        <button className="schedule">스케줄</button>
+        <button className="schedule">내 일정</button>
       </Link>
     </NavBlock>
   )

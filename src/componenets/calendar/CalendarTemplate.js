@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import Calendar from "./Calendar";
 
 const TemplateBlock = styled.div`
-  width: 768px;
-  height: 768px;
+  width: 1024px;
+  height: 850px;
 
   position: relative; /* 추후 박스 하단에 추가 버튼을 위치시키기 위한 설정 */
   background: white;
@@ -16,7 +17,7 @@ const TemplateBlock = styled.div`
 `;
 
 function CalendarTemplate({ children }){
-  return <TemplateBlock>{children}qwe</TemplateBlock>
+  return <TemplateBlock>{children}</TemplateBlock>
 }
 
 export default CalendarTemplate;
