@@ -9,6 +9,7 @@ import Calendar from './componenets/calendar/Calendar';
 import TodoHead from './componenets/todo/TodoHead';
 import TodoList from './componenets/todo/TodoList';
 import TodoCreate from './componenets/todo/TodoCreate';
+import { TodoProvider } from './componenets/todo/TodoContext';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -22,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <div className="App">
+      <TodoProvider>
       <GlobalStyle/>
       <Head/>
       <Nav/>
@@ -35,6 +37,7 @@ function App() {
           <Calendar />
         </CalendarTemplate>} />
       </Routes>
+      </TodoProvider>
     </div>
   );
 }
